@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shehab Abdo - Portfolio</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            text-align: center;
+            padding: 2rem;
+            background-color: #1f1f1f;
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            margin: 0.5rem 0;
+            color: #bb86fc;
+        }
+
+        header p {
+            font-style: italic;
+            color: #b0b0b0;
+        }
+
+        nav {
+            background-color: #1f1f1f;
+            padding: 1rem;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: #e0e0e0;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #bb86fc;
+        }
+
+        section {
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            color: #bb86fc;
+            border-bottom: 2px solid #bb86fc;
+            padding-bottom: 0.5rem;
+            animation: fadeIn 1s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .job, .project, .competition {
+            margin-bottom: 2rem;
+        }
+
+        h3 {
+            color: #e0e0e0;
+            margin: 0.5rem 0;
+            cursor: pointer;
+        }
+
+        h3:hover {
+            color: #bb86fc;
+        }
+
+        .project-details {
+            display: none;
+            margin-top: 1rem;
+            padding: 1rem;
+            background-color: #1f1f1f;
+            border-radius: 5px;
+        }
+
+        .project-details img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 1rem;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 2rem;
+        }
+
+        a {
+            color: #bb86fc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #1f1f1f;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #bb86fc;
+            color: #121212;
+            padding: 10px;
+            border-radius: 50%;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            section {
+                padding: 1rem;
+            }
+
+            header {
+                padding: 1rem;
+            }
+
+            .profile-pic {
+                width: 100px;
+                height: 100px;
+            }
+
+            nav a {
+                margin: 0 0.5rem;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="C:\ME\portfolio images\me_protofolio.jpg" alt="Shehab Abdo" class="profile-pic">
+        <h1>Shehab Abdo</h1>
+        <p>Mechatronics Engineer | Robotics & Embedded Systems Expert</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#competitions">Competitions</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a dedicated Mechatronics Engineering graduate from Ain Shams University, specializing in embedded systems, control systems, computer vision, and robotics. With a proven track record of leadership, I spearheaded a team to design an award-winning autonomous forklift, securing 1st place in the EBDAA competition among Egyptian universities. My passion lies in leveraging technical expertise to develop innovative solutions that address real-world challenges.</p>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="job">
+            <h3>Robotics Coordinator | Innovation Center for Science and Technology (ICST)</h3>
+            <p>Sept 2022 - Jan 2023</p>
+            <ul>
+                <li>Designed educational robotic kits, increasing student engagement by 30% through hands-on learning.</li>
+                <li>Proposed and executed upgrades that improved kit functionality by 20% and reduced assembly time by 15%.</li>
+                <li>Created custom PCBs, enhancing kit performance and compatibility.</li>
+            </ul>
+        </div>
+        <div class="job">
+            <h3>Robotics Instructor | Innovation Center for Science and Technology (ICST)</h3>
+            <p>Jul 2022 - Aug 2022</p>
+            <ul>
+                <li>Instructed 50+ students aged 5-13 in robotics, achieving a 90% satisfaction rate in post-course surveys.</li>
+                <li>Developed hands-on activities that improved student understanding of Arduino programming by 40%.</li>
+            </ul>
+        </div>
+        <div class="job">
+            <h3>Intern | KINNOVIA, Automotive Embedded Systems Company</h3>
+            <p>Apr 2024 - May 2025</p>
+            <ul>
+                <li>Contributed to an Embedded IoT project using Zephyr OS under graduation project mentorship.</li>
+                <li>Expanded expertise in HW Architecture, MBD, AUTOSAR, Diagnostics, OTA, and networking (HTTP, MQTT).</li>
+                <li>Conducted case studies on embedded systems topics to deepen technical knowledge.</li>
+            </ul>
+        </div>
+        <div class="job">
+            <h3>Intern | Human Centered Mechatronics Lab (HCM), Ain Shams University Virtual Hospital</h3>
+            <p>Jul 2024 - Sept 2024</p>
+            <ul>
+                <li>Built ROS packages and control algorithms for lower limb exoskeletons to aid spinal cord injury patients.</li>
+                <li>Integrated sensors and motors to enhance mobility and system functionality.</li>
+            </ul>
+        </div>
+        <div class="job">
+            <h3>Machine Learning Intern | Mentorness</h3>
+            <p>Mar 2024 - Apr 2024</p>
+            <ul>
+                <li>Authored machine learning articles, showcasing technical writing skills.</li>
+                <li>Created a customer churn prediction model using Python.</li>
+                <li>Performed EDA on World Cup 2023 data, identifying key insights.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <p><strong>Bachelor's Degree in Mechatronics Engineering</strong></p>
+        <p>Faculty of Engineering, Ain Shams University, Cairo, Egypt</p>
+        <p>Sept 2020 - June 2025</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3 onclick="toggleDetails('wafl')">Warehouse Autonomous Forklift (WAFL)</h3>
+            <div id="wafl" class="project-details">
+                <p>I was leading a team of 7 members to design and execute an autonomous forklift, achieving a 200% increase in payload capacity and 2.5x faster operational speed. Secured top 3 place at the EBDAA competition for Egyptian universities.</p>
+                <p><strong>Technologies:</strong> ROS, Hector SLAM, AMCL, C++, Python</p>
+                <p><a href="https://www.linkedin.com/feed/update/urn:li:activity:7345748259954438144/?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7345748259954438144%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29&originTrackingId=Wp2ODatSShatZ4KuizPJlg%3D%3D">View on LinkedIn</a></p>
+                <img src="C:\ME\portfolio images\wafl.jpg" alt="WAFL Project Image">
+            </div>
+        </div>
+        <div class="project">
+            <h3 onclick="toggleDetails('lane-tracking')">Autonomous Lane Tracking & Obstacle Avoidance Robot</h3>
+            <div id="lane-tracking" class="project-details">
+                <p>Designed a TurtleBot3 simulation in Gazebo, achieving 95% lane tracking accuracy and reducing collision incidents by 80%.</p>
+                <p><strong>Technologies:</strong> ROS, Gazebo, Python</p>
+                <p><a href="https://github.com/shehababdo/ROS-path-tracking-Robot/tree/main">View on GitHub</a></p>
+                <img src="path/to/lane-tracking-image.jpg" alt="Lane Tracking Project Image">
+            </div>
+        </div>
+        <div class="project">
+            <h3 onclick="toggleDetails('furuta-pendulum')">Furuta Inverted Pendulum Control Using radius</h3>
+            <div id="furuta-pendulum" class="project-details">
+                <p>Created and controlled a Furuta Pendulum using LQR in Simulink, optimizing stability and performance.</p>
+                <p><strong>Technologies:</strong> MATLAB, Simulink</p>
+                <p><a href="https://github.com/shehababdo/furuta-inverted-pendulum">View on GitHub</a></p>
+                <img src="C:\ME\portfolio images\furuta pendulum.png" alt="Furuta Pendulum Project Image">
+            </div>
+        </div>
+        <div class="project">
+            <h3 onclick="toggleDetails('scara-arm')">Autonomous Production Line with SCARA Robotic Arm</h3>
+            <div id="scara-arm" class="project-details">
+                <p>Executed a production line using Raspberry Pi, Arduino, and UART, with a SCARA arm simulated in Simulink for trajectory planning.</p>
+                <p><strong>Technologies:</strong> Raspberry Pi, Arduino, Simulink</p>
+                <p><a href="https://github.com/shehab-abdo/scara-arm">View on GitHub</a></p>
+                <img src="C:\ME\portfolio images\production line.jpeg" alt="SCARA Arm Project Image">
+            </div>
+        </div>
+        <div class="project">
+            <h3 onclick="toggleDetails('saden')">Swarm of Autonomous Drones (SADEN)</h3>
+            <div id="saden" class="project-details">
+                <p>Enhanced object detection accuracy to 90% and expanded environmental coverage by 50% using ZED camera and Grounding-DINO.</p>
+                <p><strong>Technologies:</strong> ROS, ZED Camera, Python</p>
+                <p><a href="https://github.com/shehababdo/Cars_Detection">View on GitHub</a></p>
+                <img src="C:\ME\portfolio images\drone2.jpg" alt="SADEN Project Image">
+                <img src="C:\ME\portfolio images\cars.jpg" alt="SADEN Project Image">
+            </div>
+        </div>
+        <div class="project">
+            <h3 onclick="toggleDetails('cli-app')">Command Line Interface Application</h3>
+            <div id="cli-app" class="project-details">
+                <p>Built an interactive CLI application using shell scripting for system information, device configuration, and network management with admin and user modes.</p>
+                <p><strong>Technologies:</strong> Shell Scripting</p>
+                <p><a href="https://github.com/shehababdo/BashApp_Project">View on GitHub</a></p>
+            </div>
+        </div>
+        <div class="project">
+            <h3 onclick="toggleDetails('wifi-bluetooth')">WiFi and Bluetooth Control over Linux System</h3>
+            <div id="wifi-bluetooth" class="project-details">
+                <p>Engineered a C++ application to manage Wi-Fi and Bluetooth connections on Linux systems.</p>
+                <p><strong>Technologies:</strong> C++</p>
+                <p><a href="https://github.com/shehababdo/cpp_WiFi-Bluetooth_ctrl">View on GitHub</a></p>
+            </div>
+        </div>
+        <div class="project">
+            <h3 onclick="toggleDetails('freertos-semaphore')">Binary Semaphore FreeRTOS</h3>
+            <div id="freertos-semaphore" class="project-details">
+                <p>Integrated a project using Atmega32, FreeRTOS, and a binary semaphore to control LED blinking based on button input.</p>
+                <p><strong>Technologies:</strong> FreeRTOS, Atmega32, C</p>
+                <p><a href="https://github.com/shehababdo/RTOS_simple_project_atmega32">View on GitHub</a></p>
+            </div>
+        </div>
+        <div class="project">
+            <h3 onclick="toggleDetails('linear-systems')">Linear System Modeling and Simulation</h3>
+            <div id="linear-systems" class="project-details">
+                <p>Modeled and simulated linear systems in MATLAB and Simulink to replicate physical system behavior.</p>
+                <p><strong>Technologies:</strong> MATLAB, Simulink</p>
+                <img src="C:\ME\portfolio images\modeling.jpg" alt="Linear Systems Project Image">
+            </div>
+        </div>
+        <div class="project">
+            <h3 onclick="toggleDetails('smart-home')">Smart Home System</h3>
+            <div id="smart-home" class="project-details">
+                <p>Designed a smart home system using AVR Atmega32, integrating sensors, timers, PWM, UART, and ADC.</p>
+                <p><strong>Technologies:</strong> AVR Atmega32, C</p>
+                <p><a href="https://github.com/shehababdo/atmega32-smart_home_project">View on GitHub</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <h3>Programming</h3>
+        <ul>
+            <li>C</li>
+            <li>modern C++</li>
+            <li>Python</li>
+            <li>Bash Scripting</li>
+        </ul>
+        <h3>Robotics & Simulators</h3>
+        <ul>
+            <li>ROS1 & ROS2</li>
+            <li>Control Systems</li>
+            <li>Gazebo & CoppeliaSim</li>
+            <li>MATLAB & Simulink</li>
+
+        </ul>
+        <h3>Embedded Systems</h3>
+        <ul>
+            <li>AVR,ARM,ESP32 Interfacing</li>
+            <li>raspberry pi Interfacing</li>
+            <li>RTOS</li>
+            <li>Zephyr OS</li>
+            <li>UART,SPI,I2C,CAN</li>
+            <li>HTTP,MQTT,WebSockets</li>
+        </ul>
+        <h3>Tools & Software</h3>
+        <ul>
+            <li>SolidWorks & Inventor</li>
+            <li>PCB Design [KiCad]</li>
+            <li>Git & GitHub</li>
+            <li>Tensorflow</li>
+            <li>linux</li>
+
+        </ul>
+    </section>
+
+    <section id="competitions">
+        <h2>Competitions</h2>
+        <div class="competition">
+            <h3>EBDAA Competition for Egyptian Universities</h3>
+            <p>Secured a top 3 with the Warehouse Autonomous Forklift (WAFL) project.</p>
+            <p><strong>Role:</strong> Team Leader & Robotics Engineer</p>
+            <p>Led a team to design an autonomous forklift, outperforming 20+ teams by enhancing payload capacity and operational speed.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:shehababdo89@gmail.com">shehababdo89@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/shehab-abdo-a94946198/">linkedin.com/in/shehab-abdo</a></p>
+    </section>
+
+    <footer>
+        <p>© 2025 Shehab Abdo</p>
+    </footer>
+
+    <a href="#" class="back-to-top">↑</a>
+
+    <script>
+        function toggleDetails(id) {
+            var details = document.getElementById(id);
+            if (details.style.display === "block") {
+                details.style.display = "none";
+            } else {
+                details.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
